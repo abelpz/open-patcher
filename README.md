@@ -2,10 +2,8 @@
 
 > A community library for patching JavaScript objects.
 
-[![Build Status](https://img.shields.io/travis/abelpz/open-patcher.svg?style=flat-square)](https://travis-ci.org/abelpz/open-patcher)
-[![Coverage Status](https://img.shields.io/coveralls/abelpz/open-patcher.svg?style=flat-square)](https://coveralls.io/github/abelpz/open-patcher?branch=master)
-[![npm version](https://img.shields.io/npm/v/package-name.svg?style=flat-square)](https://www.npmjs.com/package/package-name)
-[![License](https://img.shields.io/npm/l/package-name.svg?style=flat-square)](https://github.com/abelpz/open-patcher/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/open-patcher.svg?style=flat-square)](https://www.npmjs.com/package/open-patcher)
+[![License](https://img.shields.io/npm/l/open-patcher.svg?style=flat-square)](https://github.com/abelpz/open-patcher/blob/master/LICENSE)
 
 Make changes to objects using JSON paths.
 

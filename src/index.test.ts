@@ -1,6 +1,6 @@
-import { applyPatch } from './';
-import { Operation, OperationType } from './types';
-import { areObjectsRelated } from './utils';
+import { applyPatch } from 'open-patcher';
+import { Operation, OperationType } from 'open-patcher/types';
+import { areObjectsRelated } from 'open-patcher/utils';
 describe('applyPatch with single operations', () => {
   it('should apply patch delete operation over an array correctly', () => {
     const source = [1, 2, 3, 4, 5];
@@ -203,7 +203,7 @@ describe('applyPatch with multiple operations', () => {
       { name: 'Client B', status: 'inactive' },
     ],
   };
-  const result = applyPatch<typeof source>({ source, operations });
+  const result = applyPatch({ source, operations });
 
   it('should return a shallow copy of the source object', () => {
     expect(sourceCloned).toEqual(source);

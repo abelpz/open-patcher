@@ -125,7 +125,7 @@ export function applyOperation({
   };
 
   //Get the parent of the target element
-  let targetParent = pathKeys.reduce(pathReducer, currentSource);
+  const targetParent = pathKeys.reduce(pathReducer, currentSource);
 
   //Apply the operation
   const t = getType(targetParent);

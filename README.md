@@ -1,15 +1,13 @@
-# Open Patcher
+# 👨‍🔧 Open Patcher
 
 > A community library for patching JavaScript objects.
 
-[![npm version](https://img.shields.io/npm/v/open-patcher.svg?style=flat-square)](https://www.npmjs.com/package/open-patcher)
-[![License](https://img.shields.io/npm/l/open-patcher.svg?style=flat-square)](https://github.com/abelpz/open-patcher/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/open-patcher.svg?style=flat-square)](https://www.npmjs.com/package/open-patcher) [![License](https://img.shields.io/npm/l/open-patcher?style=flat-square)](https://github.com/abelpz/open-patcher/blob/master/LICENSE) ![Codecov](https://img.shields.io/codecov/c/github/abelpz/open-patcher) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/abelpz/open-patcher)
 
-Make changes to objects using JSON paths.
+Make changes to objects using **JSON paths** 😎
 
-This library is designed to be flexible and extensible, allowing developers to easily apply changes to objects using JSON patches. It was built with the intention of being a collaborative effort, and we welcome contributions from the developer community to enhance its functionality and usability.
-
-If you have any ideas, bug fixes, or feature requests, please feel free to open an issue or submit a pull request on our [GitHub repository](https://github.com/abelpz/open-patcher). Your contributions will be greatly appreciated!
+**Note:**
+If you have any ideas, bug fixes, or feature requests, please feel free to open an issue or submit a pull request on our [GitHub repository](https://github.com/abelpz/open-patcher). Your contributions will be greatly appreciated! 🤝
 
 ## API Documentation
 

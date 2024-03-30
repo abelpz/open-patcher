@@ -25,9 +25,12 @@ export function applyArrayPatch({
     mutateSource: false,
   },
 }: ApplyArrayPatchParams): any[] {
-  let newArr = options.mutateSource ? source : [...source];
+  const newArr = options.mutateSource ? source : [...source];
   // Flatten the operations array to split ranges
-  let flatOperations = flattenOperations(operations, !options.chainOperations);
+  const flatOperations = flattenOperations(
+    operations,
+    !options.chainOperations,
+  );
 
   if (!options.chainOperations) {
     // Sort operations in descending order to avoid index shifting during deletion
@@ -70,13 +73,16 @@ function flattenOperations(
       }
 
       // If the operation has a range of indexes, flatten it
+      const start = operation.index[0];
+      const end = operation.index[1] ?? start;
 
-      let [start, end] = operation.index;
-      end ??= start;
-      let range = Array.from({ length: end - start + 1 }, (_, i) => start + i);
+      const range = Array.from(
+        { length: end - start + 1 },
+        (_, i) => start + i,
+      );
 
       // Create a flat operation for each index in the range
-      let flatOperations = range.map((index, i) => {
+      const flatOperations = range.map((index, i) => {
         if (shouldThrowOnOverlappingIndex) {
           throwOnRepeatedIndex(index, operationsArrayIndex);
           updateIndexes(index);
